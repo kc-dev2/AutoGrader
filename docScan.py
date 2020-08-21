@@ -36,7 +36,13 @@ def grader(marked, real):
         if(real[k] != v):
             incorrect += 1
     
-    print("You got {} wrong".format(incorrect))
+    return incorrect
+
+def createTextFile(count):
+    createFile = open("count_incorrect.txt", "w+")
+    createFile.write("You got {} wrong".format(count))
+
+
 
 if __name__ == "__main__":
     real = docToText("test.txt")
@@ -44,6 +50,7 @@ if __name__ == "__main__":
     marked = docToText("input.txt")
     marked = numberedTextToAnswers(marked)
 
-    grader(marked, real)
+    count = grader(marked, real)
+    createTextFile(count)
 
     f.test()
