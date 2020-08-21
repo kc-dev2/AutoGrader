@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\Kyle\\Desktop\\CODE\\Python\\virtualenvs\\grader\\Scripts"
+    "python.pythonPath": "C:\\Users\\Kyle\\Desktop\\CODE\\Python\\virtualenvs\\grader\\Scripts",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
