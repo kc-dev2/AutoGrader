@@ -33,6 +33,11 @@ class TextTestCase(unittest.TestCase):
     def test_mixed(self):
         file = docToText("testfiles/neatMixed.txt")
         read = numberedTextToAnswers(file)
+        self.assertEqual(read, TextTestCase.answers)    
+
+    def test_messy(self):
+        file = docToText("testfiles/messy.txt")
+        read = numberedTextToAnswers(file)
         self.assertEqual(read, TextTestCase.answers)        
 
 

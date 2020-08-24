@@ -1,5 +1,4 @@
 import re
-import fake as f
 
 def docToText(filename):
     # use with/as to close file resource after using it
@@ -58,4 +57,3 @@ if __name__ == "__main__":
     count = grader(marked, real)
     createTextFile(count)
 
-    # f.test()
